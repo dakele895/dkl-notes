@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css">
+  <style>
+    .markdown-section a:not(:hover) {
+      text-decoration: none;
+    }
+    .sidebar {
+      padding-top: 20px;
+    }
+    .sidebar h1 {
+      font-weight: normal;
+    }
+    .sidebar blockquote {
+      margin-left: 12px;
+    }
+    section.content {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  window.$docsify = {
+    name: 'dkl个人学习笔记',
+    repo: 'https://gitee.com/dakele895/dkl-notes',
+    loadNavbar: true,
+    mergeNavbar: true,
+    formatUpdated: '{YYYY}-{MM}-{DD}',
+    plugins: [
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          return html
+            + '<hr/>'
+            + '上次更新： {docsify-updated} '
+        })
+      }
+    ]
+  }
+</script>
+<script src="//unpkg.com/docsify-copy-code"></script>
+<script src="//unpkg.com/docsify-edit-on-github/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+  // if (typeof navigator.serviceWorker !== 'undefined') {
+  //   navigator.serviceWorker.register('sw.js')
+  // }
+</script>
+</html>
