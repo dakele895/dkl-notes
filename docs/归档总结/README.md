@@ -5,5 +5,5 @@
 
 **[spring的bean生命周期](/归档总结/spring的bean生命周期)**
 
-**[MySQL中的 distinct 和 group by 哪个效率更高？](/归档总结/MySQL中的 distinct 和 group by 哪个效率更高)**
+**[MySQL中的distinct和groupby哪个效率更高?](/归档总结/MySQL中的distinct和groupby哪个效率更高)**
 
